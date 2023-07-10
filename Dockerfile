@@ -29,8 +29,6 @@
 # Intermediary container for building
 FROM golang:1.20.5-alpine3.18 AS build
 
-LABEL org.opencontainers.image.source https://github.com/filouz/tegola
-
 ARG BUILDPKG="github.com/go-spatial/tegola/internal/build"
 ARG VER="Version Not Set"
 ARG BRANCH="not set"
